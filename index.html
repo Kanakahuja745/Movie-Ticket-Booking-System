@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Booking System</title>
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #121212;
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        .movie-card {
+            background: #1e1e1e;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            display: inline-block;
+            width: 250px;
+        }
+
+        button {
+            padding: 10px 15px;
+            background-color: crimson;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: darkred;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🎬 Movie Booking System</h1>
+
+    <div class="container">
+
+        <div class="movie-card">
+            <h2>Inception</h2>
+            <p>Total Seats: 10</p>
+            <button onclick="bookMovie('Inception')">Book Now</button>
+        </div>
+
+        <div class="movie-card">
+            <h2>Avengers</h2>
+            <p>Total Seats: 10</p>
+            <button onclick="bookMovie('Avengers')">Book Now</button>
+        </div>
+
+    </div>
+
+    <script>
+        function bookMovie(movieName) {
+            let name = prompt("Enter your name:");
+            let seats = prompt("How many seats?");
+
+            alert("Booking Successful!\nMovie: " + movieName + 
+                  "\nName: " + name + 
+                  "\nSeats: " + seats);
+        }
+    </script>
+
+</body>
+</html>

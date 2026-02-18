@@ -44,7 +44,7 @@ class Movie{
             return false;
         }
         if(seats[seatNo-1]){
-            seats[seatNo-1]==false;
+            seats[seatNo-1]==true;
             return true;
         }
         return false;
@@ -214,5 +214,6 @@ int main(){
     }
 
     return 0;
+
 
 }
